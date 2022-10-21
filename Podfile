@@ -6,6 +6,10 @@ target 'AssessmentApp' do
   use_frameworks!
 
   # Pods for AssessmentApp
+  pod 'Alamofire', '~> 4.8'
+  pod 'MBProgressHUD', '~> 1.1.0'
+  pod 'RxSwift', '~> 5.1.0'
+  pod 'RxCocoa', '~> 5.1.0'
 
   target 'AssessmentAppTests' do
     inherit! :search_paths

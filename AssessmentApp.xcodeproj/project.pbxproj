@@ -310,6 +310,7 @@
 				8EB5CCB127988A0700396097 /* Sources */,
 				8EB5CCB227988A0700396097 /* Frameworks */,
 				8EB5CCB327988A0700396097 /* Resources */,
+				712EE54A56B42F84C27B75E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -347,6 +348,7 @@
 				8EB5CCD427988A0900396097 /* Sources */,
 				8EB5CCD527988A0900396097 /* Frameworks */,
 				8EB5CCD627988A0900396097 /* Resources */,
+				64666B5C59A26683398710ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -431,6 +433,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		64666B5C59A26683398710ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AssessmentApp-AssessmentAppUITests/Pods-AssessmentApp-AssessmentAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AssessmentApp-AssessmentAppUITests/Pods-AssessmentApp-AssessmentAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AssessmentApp-AssessmentAppUITests/Pods-AssessmentApp-AssessmentAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		712EE54A56B42F84C27B75E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AssessmentApp/Pods-AssessmentApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AssessmentApp/Pods-AssessmentApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AssessmentApp/Pods-AssessmentApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		947B1722BE6F2707901E60B6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
