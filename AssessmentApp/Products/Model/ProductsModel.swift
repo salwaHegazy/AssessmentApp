@@ -10,9 +10,9 @@ import Foundation
 // MARK: - Product
 struct ProductModel: Codable {
     let barcode, productsModelDescription, id: String
-    let imageURL: String
-    let name: String
-    let retailPrice: Int
+    let imageURL: String?
+    let name: String?
+    let retailPrice: Int?
     let costPrice: Int?
 
     enum CodingKeys: String, CodingKey {
