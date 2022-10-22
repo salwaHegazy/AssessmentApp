@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		350776965808105772787798 /* Pods_AssessmentApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4EF3ACC1E5508C83C9CE681 /* Pods_AssessmentApp.framework */; };
-		3517872229035C8F00979C91 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517872129035C8F00979C91 /* ProductsViewController.swift */; };
+		3517872229035C8F00979C91 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517872129035C8F00979C91 /* ProductsView.swift */; };
 		3517872429035CC300979C91 /* Products.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3517872329035CC300979C91 /* Products.storyboard */; };
 		3517872729035D2C00979C91 /* ProductsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517872529035D2C00979C91 /* ProductsTableViewCell.swift */; };
 		3517872829035D2C00979C91 /* ProductsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3517872629035D2C00979C91 /* ProductsTableViewCell.xib */; };
@@ -20,6 +20,7 @@
 		351787382903769600979C91 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351787372903769600979C91 /* UIViewController + Extension.swift */; };
 		358F4B5A290405A6006EA743 /* ProductDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358F4B59290405A6006EA743 /* ProductDetailsView.swift */; };
 		358F4B5C290405BE006EA743 /* ProductDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358F4B5B290405BE006EA743 /* ProductDetailsViewModel.swift */; };
+		35F84233290426B300A6FAFA /* NetworkStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F84232290426B300A6FAFA /* NetworkStatus.swift */; };
 		4703EDBE47677FDC1A575D51 /* Pods_AssessmentApp_AssessmentAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33BA7BBC8BC25E428CABDD94 /* Pods_AssessmentApp_AssessmentAppUITests.framework */; };
 		8EB5CCB927988A0700396097 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5CCB827988A0700396097 /* AppDelegate.swift */; };
 		8EB5CCBB27988A0700396097 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB5CCBA27988A0700396097 /* SceneDelegate.swift */; };
@@ -59,7 +60,7 @@
 		21724A7E5C95B6F5C3649D31 /* Pods-AssessmentApp-AssessmentAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssessmentApp-AssessmentAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-AssessmentApp-AssessmentAppUITests/Pods-AssessmentApp-AssessmentAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		330B0E3D7B33EFC5ECBE4BE9 /* Pods-AssessmentApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssessmentApp.debug.xcconfig"; path = "Target Support Files/Pods-AssessmentApp/Pods-AssessmentApp.debug.xcconfig"; sourceTree = "<group>"; };
 		33BA7BBC8BC25E428CABDD94 /* Pods_AssessmentApp_AssessmentAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssessmentApp_AssessmentAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3517872129035C8F00979C91 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		3517872129035C8F00979C91 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
 		3517872329035CC300979C91 /* Products.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Products.storyboard; sourceTree = "<group>"; };
 		3517872529035D2C00979C91 /* ProductsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewCell.swift; sourceTree = "<group>"; };
 		3517872629035D2C00979C91 /* ProductsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsTableViewCell.xib; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 		351787372903769600979C91 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
 		358F4B59290405A6006EA743 /* ProductDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsView.swift; sourceTree = "<group>"; };
 		358F4B5B290405BE006EA743 /* ProductDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewModel.swift; sourceTree = "<group>"; };
+		35F84232290426B300A6FAFA /* NetworkStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStatus.swift; sourceTree = "<group>"; };
 		3B35D17110B3FDD9D8016F3F /* Pods_AssessmentAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssessmentAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52363F1678D3B98E66EA4D4D /* Pods-AssessmentApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssessmentApp.release.xcconfig"; path = "Target Support Files/Pods-AssessmentApp/Pods-AssessmentApp.release.xcconfig"; sourceTree = "<group>"; };
 		8EB5CCB527988A0700396097 /* AssessmentApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssessmentApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,7 +199,7 @@
 		3517871F29035C2A00979C91 /* Controller + Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				3517872129035C8F00979C91 /* ProductsViewController.swift */,
+				3517872129035C8F00979C91 /* ProductsView.swift */,
 				3517872329035CC300979C91 /* Products.storyboard */,
 			);
 			path = "Controller + Storyboard";
@@ -226,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				3517872F29036C5C00979C91 /* APIService.swift */,
+				35F84232290426B300A6FAFA /* NetworkStatus.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -617,7 +620,8 @@
 				358F4B5C290405BE006EA743 /* ProductDetailsViewModel.swift in Sources */,
 				8EB5CCF727988DB000396097 /* MainController.swift in Sources */,
 				351787352903709F00979C91 /* BaseErrorModel.swift in Sources */,
-				3517872229035C8F00979C91 /* ProductsViewController.swift in Sources */,
+				3517872229035C8F00979C91 /* ProductsView.swift in Sources */,
+				35F84233290426B300A6FAFA /* NetworkStatus.swift in Sources */,
 				8EB5CCC327988A0700396097 /* AssessmentApp.xcdatamodeld in Sources */,
 				3517872A29035D5B00979C91 /* ProductsViewModel.swift in Sources */,
 				8EB5CCB927988A0700396097 /* AppDelegate.swift in Sources */,

@@ -27,7 +27,7 @@ class ProductsViewModel {
     //MARK: - Methods
     func getProductsData() {
         loadingBehavior.accept(true)
-        APIService.instance.getData(endPoint: URLPath.getProductsData, method: .get, encoding: JSONEncoding.default) { [weak self] (productsModel: ProductsModel?, errorModel: BaseErrorModel?, error) in
+        APIService.instance.getData(endPoint: URLPath.getProductsData, method: .get) { [weak self] (productsModel: ProductsModel?, errorModel: BaseErrorModel?, error) in
             guard let self = self else { return }
             self.loadingBehavior.accept(false)
             

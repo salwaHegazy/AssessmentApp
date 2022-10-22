@@ -10,6 +10,8 @@ target 'AssessmentApp' do
   pod 'MBProgressHUD', '~> 1.1.0'
   pod 'RxSwift', '~> 5.1.0'
   pod 'RxCocoa', '~> 5.1.0'
+  pod 'Kingfisher'
+
 
   target 'AssessmentAppTests' do
     inherit! :search_paths

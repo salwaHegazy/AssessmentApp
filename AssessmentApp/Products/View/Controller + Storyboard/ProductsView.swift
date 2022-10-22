@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class ProductsViewController: UIViewController {
+class ProductsView: UIViewController {
     
     //MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
@@ -50,7 +50,7 @@ class ProductsViewController: UIViewController {
                 .items(cellIdentifier: productsTableViewCell,
                        cellType: ProductsTableViewCell.self)) { row, product, cell in
                         print(row)
-                        
+                cell.config(product: product)
         }
         .disposed(by: disposeBag)
     }

@@ -13,7 +13,7 @@ class APIService {
     static let instance = APIService()
     
     
-    func getData<T: Decodable, E: Decodable>(endPoint: Endpoint, method: HTTPMethod ,params: Parameters? = nil, encoding: ParameterEncoding ,headers: HTTPHeaders? = nil ,completion: @escaping (T?, E?, Error?)->()) {
+    func getData<T: Decodable, E: Decodable>(endPoint: Endpoint, method: HTTPMethod ,params: Parameters? = nil, encoding: ParameterEncoding = JSONEncoding.default ,headers: HTTPHeaders? = nil ,completion: @escaping (T?, E?, Error?)->()) {
         
         guard let url = URL(string: endPoint.path) else {return}
         

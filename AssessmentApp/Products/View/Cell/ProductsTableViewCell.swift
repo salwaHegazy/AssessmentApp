@@ -6,18 +6,21 @@
 //
 
 import UIKit
+import Kingfisher
+
 
 class ProductsTableViewCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    //MARK: - Outlets
+    @IBOutlet weak var productImage: UIImageView!
+    @IBOutlet weak var productNameLabel: UILabel!
+    
+    
+    func config(product : ProductModel){
+        self.productNameLabel.text = product.name
+        let url = URL(string: product.imageURL ?? "noproducts")
+        self.productImage.sd_setImage(with: url, placeholderImage: UIImage(named: "noproducts"))
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    
     
 }
