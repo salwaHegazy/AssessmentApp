@@ -19,11 +19,16 @@ class ProductsViewController: UIViewController {
     let productsViewModel = ProductsViewModel()
     let disposeBag = DisposeBag()
     
-
+    // MARK: - View's Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupTableView()
+        
     }
     
+    //MARK: - Methods
+    func setupTableView() {
+       tableView.register(UINib(nibName: productsTableViewCell, bundle: nil), forCellReuseIdentifier: productsTableViewCell)
+    }
 
 }
