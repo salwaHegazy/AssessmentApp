@@ -9,6 +9,7 @@ import Foundation
 import RxCocoa
 import RxSwift
 import Alamofire
+import CoreData
 
 class ProductsViewModel {
     //MARK: - Members
@@ -44,10 +45,46 @@ class ProductsViewModel {
                 if productsModel.count  > 0 {
                     self.productsModelSubject.onNext(productsModel.values.map({$0}))
                     self.isTableHidden.accept(false)
+                    self.saveData(products: productsModel.values.map({$0}))
                 } else {
                     self.isTableHidden.accept(true)
                 }
             }
+        }
+    }
+    
+    //MARK: - SaveData To CoreData
+    func saveData(products : [ProductModel]){
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        
+        //create a context from this container
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        //create an entity and new user records.
+        let productEntity = NSEntityDescription.entity(forEntityName: "Product", in: managedContext)!
+        
+        //add products to newly created records
+        
+        for productItem in products {
+            
+            let product = NSManagedObject(entity: productEntity, insertInto: managedContext)
+            product.setValue(productItem.id, forKeyPath: "id")
+            product.setValue(productItem.name, forKey: "name")
+            product.setValue(productItem.productsModelDescription, forKey: "product_description")
+            product.setValue(productItem.barcode, forKey: "barcode")
+            product.setValue(productItem.imageURL, forKey: "image")
+            product.setValue(productItem.retailPrice, forKey: "retailPrice")
+            product.setValue(productItem.costPrice, forKey: "costPrice")
+        }
+        
+        //save products inside the Core Data
+        
+        do {
+            try managedContext.save()
+           
+        } catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
         }
     }
     
