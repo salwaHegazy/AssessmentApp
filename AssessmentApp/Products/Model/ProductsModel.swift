@@ -8,12 +8,13 @@
 import Foundation
 
 // MARK: - Product
-struct ProductModel: Codable {
+class ProductModel: Codable {
     let barcode, productsModelDescription, id: String
     let imageURL: String?
     let name: String?
     let retailPrice: Int?
     let costPrice: Int?
+    var count: Int?
 
     enum CodingKeys: String, CodingKey {
         case barcode
